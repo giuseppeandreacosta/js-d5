@@ -45,12 +45,26 @@ console.log(reverseString(newString))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function upperFirst(){
+    let string = "maiuscolo";
+    return upperFirst.toUpperCase(string)  ;
+  }
+  console.log(upperFirst);
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function giveMeRandom(n) {
+    let random = n;
+    for (let i = 0;i < 10;i++){
+        random += giveMeRandom[i];
+    }
+    return random;
+}
+console.log(giveMeRandom);
+
 
 //EXTRA:
 /* ESERCIZIO 1
