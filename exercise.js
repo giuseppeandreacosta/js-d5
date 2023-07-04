@@ -26,11 +26,12 @@ function crazySum(a, b) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function boundary(numberInt = 50){
-    const intero = numberInt  <= 100;
-    return intero;
-  
-  }
-  console.log(boundary ,(20 <= 100));
+    
+  return intero <= 100;
+
+}
+const intero = boundary  <= 100;
+console.log(boundary ,(20 <= 100));
 
 /* ESERCIZIO 3
  Scrivi una funzione chiamata "reverseString", che accetta una stringa come parametro e la ritorna invertita (es.: EPICODE => EDOCIPE).
