@@ -5,11 +5,18 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function crazySum(sum){
-    const somma = sum ;
-    return somma;
-  }
-  console.log(crazySum(10+15*3));
+
+function crazySum(a, b) {
+  return a + b;
+ }
+ 
+ function crazyDifference(a, b) {
+  return a * 3;
+ }
+ const sum = crazySum(25, 25);
+ const difference = crazyDifference(25);
+ console.log(sum);
+ console.log(difference);
 
 
 /* ESERCIZIO 2
