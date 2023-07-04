@@ -38,15 +38,25 @@ console.log(boundary ,(20 <= 100));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+// ciclo for con i--( decrescente )
+// .lenght -1
 function reverseString (str) {
-    let newString = "kawasaki";
-    for (let i = str.length - 1; i >= 0; i--) {
-        newString += reverseString[i];
-    }
-    return newString;
+  let newString = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+      newString += str[i];
+  }
+  return newString;
 }
-console.log(reverseString(newString))
+console.log(reverseString("Kawasaki"));
+
+
+// .split -- divide
+// .reverse -- gira
+// .join -- unisce
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+console.log(reverseString("KAWASAKI"));
 
 /* ESERCIZIO 4
  Scrivi una funzione chiamata "upperFirst", che accetta una stringa come parametro e la ritorna rendendo maiuscola ogni lettera iniziale di ogni parola.
