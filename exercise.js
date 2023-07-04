@@ -65,7 +65,7 @@ console.log(reverseString("KAWASAKI"));
 /* SCRIVI QUI LA TUA RISPOSTA */
 function upperFirst(){
     let string = "maiuscolo";
-    return upperFirst.toUpperCase(string)  ;
+    return upperFirst.toUpperCase()  ;
   }
   console.log(upperFirst);
 
