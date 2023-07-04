@@ -50,6 +50,15 @@ function upperFirst(){
     return upperFirst.toUpperCase(string)  ;
   }
   console.log(upperFirst);
+
+
+//   function upperFirst(maiuscolo){
+    
+//     return upperFirst.toUpperCase(maiuscolo)  ;
+//   }
+//   let string = upperFirst;
+//   console.log(upperFirst);
+
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
 */
@@ -63,6 +72,7 @@ function giveMeRandom(n) {
     }
     return random;
 }
+giveMeRandom(n)
 console.log(giveMeRandom);
 
 
