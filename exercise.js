@@ -80,7 +80,8 @@ function giveMeRandom(n) {
     random.push(Math.floor(Math.random() * 11));
   }
   return random;
-}
+}console.log(giveMeRandom(5));
+
 
 
 // //EXTRA:
@@ -122,12 +123,12 @@ console.log(sumAbsolute);
 
 // /* SCRIVI QUI LA TUA RISPOSTA */
 function codify(string){
-  if (string.startsWith("code")){
+  if (string.indexOf("code") === 0){
     return string;
   } else {
     return "code" + string
   } 
-}console.log();
+}console.log(codify("1codehello"));
 
 // /* ESERCIZIO 4
 //  Scrivi una funzione chiamata "check3and7" la quale accetta un numero intero positivo come parametro.
@@ -138,11 +139,7 @@ function codify(string){
 // /* SCRIVI QUI LA TUA RISPOSTA */
 
 function check3and7(){
-  if (number % 3 === 0 || number % 7 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return (number % 3 === 0 || number % 7 === 0) 
 }
 
 
@@ -152,8 +149,7 @@ function check3and7(){
 
 // /* SCRIVI QUI LA TUA RISPOSTA */
 
-// function cutString(stringCut) {
-//   if 
-
-// }
-// let stringCut = "stringa"
+function cutString(inputString){
+  return inputString.slice(1,inputString.length - 1);
+} 
+console.log(cutString("Il primo e l'ultimo"))
