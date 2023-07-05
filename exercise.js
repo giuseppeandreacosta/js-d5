@@ -38,11 +38,11 @@ console.log(boundary(200));
 // // ciclo for con i--( decrescente )
 // // .lenght -1
 function reverseString(str) {
-  let newString = "";
+  let reString = "";
   for (let i = str.length - 1; i >= 0; i--) {
-    newString += str[i];
+    reString += str[i];
   }
-  return newString;
+  return reString;
 }
 console.log(reverseString("Kawasaki"));
 
@@ -61,12 +61,12 @@ console.log(reverseString("cipolla"));
 // /* SCRIVI QUI LA TUA RISPOSTA */
 
 function upperFirst(up){
-  let maiuscolo = "";
+  const maiuscolo = up.split(' ');
   for (let i = 0; i < maiuscolo.length; i++){
   }
   return up.toUpperCase();
 }
-console.log(upperFirst("maiuscolo,minuscolo"));
+upperFirst("Ciao a tutti buona serata")
 
 // /* ESERCIZIO 5
 //  Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
@@ -82,7 +82,6 @@ function giveMeRandom(n) {
   return random;
 }
 
-console.log(giveMeRandom(3));
 
 // //EXTRA:
 // /* ESERCIZIO 1
@@ -94,7 +93,8 @@ console.log(giveMeRandom(3));
 function area(l1, l2) {
   return l1 * l2;
 }
-console.log(area);
+const areaRettangolo = area(5, 5)
+console.log(areaRettangolo);
 
 // /* ESERCIZIO 2
 //  Scrivi una funzione chiamata "crazyDiff" che calcola la differenza assoluta tra un numero fornito e 19.
@@ -110,8 +110,8 @@ function crazyDiff(x,y){
     return x + y;
   }
 }
-const sumOne = crazyDiff(-31,19)
-console.log(sumOne);
+const sumAbsolute = crazyDiff(-31,19)
+console.log(sumAbsolute);
 
 
 
@@ -127,7 +127,7 @@ function codify(string){
   } else {
     return "code" + string
   } 
-}
+}console.log();
 
 // /* ESERCIZIO 4
 //  Scrivi una funzione chiamata "check3and7" la quale accetta un numero intero positivo come parametro.
